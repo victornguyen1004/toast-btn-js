@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>BEM</title>
+</head>
+<body>
+    <div>
+        <!-- Toast -->
+        <div id="toast"></div>
+        <!-- Control -->
+        <div class="control">
+            <span>Bảng hiển thị toast</span>
+            <div class="buttonlist">
+                <div onclick="showSuccessToast();" class="control__btn control__btn--success">Success Button</div>
+                <div onclick="showInfoToast();" class="control__btn control__btn--info">Info Button</div>
+                <div onclick="showErrorToast();" class="control__btn control__btn--error">Error Button</div>
+                <div onclick="showWarningToast();" class="control__btn control__btn--warning">Warning Button</div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
